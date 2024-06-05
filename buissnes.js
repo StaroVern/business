@@ -1,7 +1,7 @@
 const finance = require('javascript-finance');
 
 function calculateNpv(cashFlows, interestRate) {
-    const presentValue = cashFlows.map((cf, i) => cf / (1 + interestRate) ** i);
+    const presentValue = cashFlows.map((cf, i) => cf / (1 + interestRate) ** i);//вот здесь зашифрован бизнес план
     return finance.sum(presentValue);
 }
 
